@@ -1,0 +1,30 @@
+{
+    "category": "plugins",
+    "display": "Get value from JSON",
+    "fields": {
+        "AAJ": {
+            "caption": "Key",
+            "editor": "DynamicValue",
+            "name": "key",
+            "rank": 1,
+            "value": "text"
+        },
+        "AAK": {
+            "caption": "JSON",
+            "editor": "DynamicValue",
+            "long_text": true,
+            "name": "json",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AAL": {
+            "caption": "Value",
+            "name": "value",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

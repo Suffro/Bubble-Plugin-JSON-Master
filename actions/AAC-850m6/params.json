@@ -1,0 +1,23 @@
+{
+    "category": "data (things)",
+    "display": "Data to JSON",
+    "fields": {
+        "AAG": {
+            "caption": "Pairs",
+            "doc": "",
+            "editor": "key_value_list",
+            "name": "pairs",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "return_value": {
+        "AAF": {
+            "caption": "JSON",
+            "name": "json",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
+}

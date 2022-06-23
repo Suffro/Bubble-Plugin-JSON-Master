@@ -1,0 +1,9 @@
+{
+    "categories": {
+        "0": "data (things)"
+    },
+    "description": "Convert API Request Data into JSON",
+    "image": "//s3.amazonaws.com/appforest_uf/f1655246170314x898360873798666800/curly-bracket.png",
+    "license": "open_source",
+    "name": "JSON Master"
+}
