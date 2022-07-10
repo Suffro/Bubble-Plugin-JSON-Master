@@ -1,5 +1,22 @@
 {
-    "category": "plugins",
+    "category": "data (things)",
     "display": "Thing to JSON",
-    "type": "client_side"
+    "fields": {
+        "AAS": {
+            "caption": "Thing",
+            "editor": "DynamicValue",
+            "name": "thing",
+            "rank": 0,
+            "value": "_any_thing_bindable"
+        }
+    },
+    "return_value": {
+        "AAT": {
+            "caption": "JSON",
+            "name": "json",
+            "rank": 0,
+            "value": "text"
+        }
+    },
+    "type": "server_side"
 }

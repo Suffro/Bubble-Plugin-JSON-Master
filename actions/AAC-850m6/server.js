@@ -1,19 +1,17 @@
 function(properties, context) {
     
-    let thing = properties.thing;
-    let props = thing.listProperties();
-    let obj={}
-	for(let i=0; i<props.length; i++){
-        if(typeof thing.get(props[i]) == "string"){
-        	obj[props[i]] = thing.get(props[i]);
-        }
-    }
-    
-    let returnJson = JSON.stringify(obj);
-    return (
-    	{
-            json: returnJson
+    let json_result = {};
+    let pairs_array = properties.pairs;
+    let obj={};
+
+    for (const pair of pairs_array) {
+  		obj[pair.key]=pair.value;
+	}
+
+    let stringified_obj = JSON.stringify(obj);
+	return(
+        {
+    		json: stringified_obj
         }
     );
-
 }
