@@ -1,6 +1,6 @@
 {
     "category": "data (things)",
-    "display": "Data to JSON",
+    "display": "Key/value pairs to JSON",
     "fields": {
         "AAU": {
             "caption": "Pairs",
