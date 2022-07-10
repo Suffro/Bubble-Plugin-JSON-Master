@@ -2,13 +2,12 @@
     "category": "data (things)",
     "display": "Data to JSON",
     "fields": {
-        "AAG": {
-            "caption": "Pairs",
-            "doc": "",
-            "editor": "key_value_list",
-            "name": "pairs",
+        "AAP": {
+            "caption": "Thing",
+            "editor": "DynamicValue",
+            "name": "thing",
             "rank": 0,
-            "value": "text"
+            "value": "_any_thing_bindable"
         }
     },
     "return_value": {
