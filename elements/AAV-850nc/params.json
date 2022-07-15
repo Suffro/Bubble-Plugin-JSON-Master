@@ -1,0 +1,39 @@
+{
+    "add_is_visible": true,
+    "category": "visual elements",
+    "default_dim": {
+        "height": 50,
+        "width": 50
+    },
+    "display": "Value from JSON",
+    "fields": {
+        "AAW": {
+            "caption": "JSON",
+            "editor": "DynamicValue",
+            "name": "json",
+            "rank": 0,
+            "value": "text"
+        },
+        "AAX": {
+            "caption": "Key",
+            "editor": "DynamicValue",
+            "name": "key",
+            "rank": 1,
+            "value": "text"
+        }
+    },
+    "icon": "ion-quote",
+    "property_applications": {
+        "resizable": true
+    },
+    "states": {
+        "AAY": {
+            "caption": "value",
+            "initialization_code": {
+                "fn": "function(properties, context) {\n\n\tlet obj = JSON.parse(properties.json);\n    let val = '';\n    if(obj&&obj.hasOwnProperty(properties.key)){\n        val = obj[properties.key];\n        if(typeof val != 'string'){\n            val = JSON.stringify(val);\n        }\n    }\n    \n    return val;\n}"
+            },
+            "name": "value",
+            "value": "text"
+        }
+    }
+}
